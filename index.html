@@ -61,7 +61,27 @@
     .hero-explore { position:absolute; z-index:2; right:clamp(38px,3.125vw,108px); bottom:58px; display:flex; align-items:center; gap:12px; font-family:"Italiana",Georgia,serif; font-size:clamp(32px,1.667vw,52px); letter-spacing:-.02em; white-space:nowrap; }
     .hero-explore.text-link { align-items:center; }
     .hero-explore img { width:27px; height:auto; flex-shrink:0; }
-    .featured { display:grid; grid-template-columns:minmax(0,.72fr) minmax(0,.98fr); column-gap:clamp(100px,5.2vw,180px);row-gap:clamp(48px,3vw,90px); min-height:clamp(980px,51vw,1600px); padding:clamp(100px,5.2vw,180px) var(--gutter); scroll-margin-top:140px; }
+    
+    .featured { /*프로젝트 섹션 레이아웃*/
+      position:relative;
+      display:grid;
+      grid-template-columns:minmax(0,.72fr) minmax(0,.98fr);
+      gap:clamp(100px,5.2vw,180px);
+      min-height:clamp(980px,51vw,1600px);
+      padding:clamp(100px,5.2vw,180px) var(--gutter);
+      scroll-margin-top:140px;
+    }
+
+    .featured-label { /*프로젝트 섹션 "WORKS" 레이아웃*/
+      position:absolute;
+      top:clamp(36px,3vw,72px);
+      left:var(--gutter);
+      font-family:"Italiana",Georgia,serif;
+      font-size:clamp(60px,5vw,96px);
+      line-height:1;
+      letter-spacing:.05em;
+    }
+    
     .featured-copy { display:flex; flex-direction:column; justify-content:center; align-items:flex-start; min-height:clamp(780px,40.6vw,1260px); gap:clamp(28px,1.5vw,48px); }
     .featured h2 { font-size:clamp(76px,3.96vw,128px); }
     .featured p { width:min(620px,100%); font-size:clamp(28px,1.46vw,46px); }
